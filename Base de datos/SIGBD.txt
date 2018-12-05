@@ -1,0 +1,59 @@
+create database imprenta;
+use imprenta;
+
+create table proveedor(
+id_proveedor primary key,
+
+NombreP varchar(50),
+NombreMat varchar(50),
+cantidad_compra integer,
+Precio integer,
+dateCompra date)
+engine=innodb;
+
+
+create table cliente(
+id_cliente primary key,
+nombre_cliente varchar(50),
+descripcion_material varchar(300)
+precio_total integer,
+importe integer,
+fecha_enterege date)
+engine=innodb;
+
+create table (
+nombre_materia varchar(100),
+cantidad_trabajo integer)
+engine=innodb;
+
+create table entradas(
+cantidad_ajenas integer,
+descripcion_ajenas varchar(300)
+engine=innodb;
+
+create table salidas(
+cantidad_salidas integer,
+descripcion_ajenas varchar(300)
+engine=innodb;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
